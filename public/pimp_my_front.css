@@ -1,0 +1,434 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+html, button, input {font-family: Montserrat; color: Black}
+
+body {
+    background-size: cover;
+    margin: 0;
+}
+
+.header {
+    height: 70px;
+    background: rgb(66,103,178);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerLogo img {
+    height: 30px
+}
+
+.headerProfPic img {
+    height: 55px;
+    width: 55px;
+    border-radius: .25em;
+    margin-right: 8px
+}
+
+.footer {
+    height: 20px;
+    background: black;
+    margin-top: 10px;
+}
+
+.welcome,
+.login {
+    background: rgb(66,103,178);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    color: white;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcomeLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeLogo img {
+    opacity: 0.95;
+    margin-right: 20px;
+}
+
+.welcomeLogo #logoTxt {
+    opacity: 0.9;
+    font-size: 2em;
+}
+
+.register,
+.login {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regisForm,
+.loginForm {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    opacity: 0.9;
+}
+
+.regisForm input {
+    margin-top: 5px;
+    font-size: 1.15em
+}
+
+.regisForm button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-color: transparent;
+    font-size: 1.15em
+}
+
+.login img {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    opacity: 0.95;
+    width: 175px;
+}
+
+.loginForm {
+    margin-top: 20px;
+}
+
+.loginForm input {
+    margin-top: 5px;
+    font-size: 1.15em
+}
+
+.loginForm button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-color: transparent;
+    font-size: 1.15em
+}
+
+.registerLink,
+.loginLink {
+    /* font-size: 20px */
+}
+
+button {
+    border: 2px solid FloralWhite;
+    font-size: 1em;
+    padding: .25em .5em .3125em;
+    color: WhiteSmoke;
+    border-radius: .25em;
+    background: rgba(66,103,178, 0.95);
+}
+
+input {
+    border: 2px solid FloralWhite;
+    font-size: 1em;
+    border-radius: .25em;
+    background: WhiteSmoke;
+}
+
+label {
+    border: 2px solid FloralWhite;
+    font-size: 1em;
+    padding: .25em .5em .3125em;
+    color: WhiteSmoke;
+    border-radius: .25em;
+    background: rgba(66,103,178, 0.6);
+}
+
+input[type='file'] {
+    display: none;
+}
+
+#bioLink {
+    color: rgb(66,103,178);
+}
+
+.userName {
+    font-size: 1.5em
+}
+
+.userProfile img {
+    border-radius: .25em;
+    weight: 350px;
+    height: 350px;
+}
+
+.userProfile #bio {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    width: 400px;
+    display: flex;
+}
+
+.userProfile #bioDesc{
+    text-align:center;
+    vertical-align: middle;
+    background: rgba(66,103,178, 0.3);
+    border-radius: .25em;
+    width: 400px;
+    padding: 1em .75em 1em;
+}
+
+.userProfile #bioLink{
+    font-size: 1em;
+    padding: .25em .5em .3125em;
+    color:rgba(66,103,178, 0.9);
+    border-radius: .25em;
+    background: transparent;
+    width: 67px;
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.bioInput #bioDesc {
+    background: rgba(66,103,178, 0.6);
+    width: 390px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.bioInput button {
+    margin-top: 3px;
+}
+
+.bio a {
+    cursor: pointer;
+}
+
+.userProfile,
+.otherProfile {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.myConnect,
+.otherConnect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otherProfile img {
+    border-radius: .25em;
+    weight: 250px;
+    height: 250px;
+}
+
+.otherProfile #bio {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    background: rgba(66,103,178, 0.3);
+    border-radius: .25em;
+    width: 400px
+}
+
+.otherProfile #bioDesc{
+    margin-top: 100px;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.otherProfile #bioLink {
+    visibility: hidden;
+}
+
+.connections {
+    display: flex;
+    flex-direction: column;
+}
+
+.friends,
+.wannabes {
+    display: flex;
+    flex-direction: column;
+}
+
+#connection {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 1.75em;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#users {
+    display:flex;
+    flex-direction: row;
+}
+
+.userPics {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.userPics img {
+    width: 200px;
+    height: 200px;
+    border-radius: .25em;
+}
+
+.userPics p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.95);
+}
+
+.friends button {
+    font-size: 0.85em;
+    margin-left: 60px
+}
+
+.wannabes button {
+    font-size: 0.85em;
+    margin-left: 15px
+}
+
+.error {
+    color: crimson
+}
+
+.chatFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chatMessages {
+    height: 400px;
+    width: 700px;
+    overflow-x: hidden;
+    background: rgba(66,103,178, 0.3);
+    border: 1px solid rgba(66,103,178, 0.9);
+    margin-top: 40px;
+}
+
+.chatFrame textarea {
+    height: 100px;
+    width: 696px;
+    border: 1px solid transparent;
+    background: rgba(66,103,178, 0.6);
+    border: 1px solid rgba(66,103,178, 0.9);
+    border-top: none;
+}
+
+.chatMsg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chatMsg img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.senderData #senderName {
+    color: rgb(66,60,178);
+}
+
+.senderData #senderMsg {
+    font-size: 0.95em;
+    color: rgba(0,0,0, 0.8);
+}
+
+.senderData #msgDate {
+    font-size: 0.85em;
+    margin-left: 6px;
+    color: rgba(66,60,178,0.3);
+}
+
+.nameAndDate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10px;
+}
+
+.modalicious {
+    background: rgba(66,103,178, 0.1);;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    border: 2px solid rgba(66,103,178, 0.9);
+    border-radius: .25em;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    left: 980px;
+    right: 0;
+    margin-top: 10px;
+}
+
+.modalicious h4{
+    height: 0px;
+    margin-top: 2px;
+    margin-left: 285px;
+}
+
+.modalicious label {
+    border-color: transparent;
+}
+
+.modalicious button {
+    border-color: transparent;
+    margin-top: 1px;
+}
+
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    align-self: center;
+}
+
+.online {
+    display: flex;
+    flex-direction: column;
+}
+
+.usersOnline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.usersOnline img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.usersOnline p {
+    color: black;
+    text-decoration-line: none;
+}
